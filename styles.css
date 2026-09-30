@@ -103,3 +103,14 @@
     transform:scale(1.02) !important;
   }
 }
+/* Native mobile autoplay: dedicated video element, no JS source switching */
+.hero-video-mobile{display:none}
+@media(max-width:820px){
+  .hero-video-desktop{display:none !important}
+  .hero-video-mobile{
+    display:block !important;
+    width:100% !important;height:100% !important;
+    object-fit:cover !important;object-position:center center !important;
+    transform:scale(1.02) !important;pointer-events:none;
+  }
+}
