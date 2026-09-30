@@ -29,12 +29,12 @@
   if(!c) return;
   const img=new Image();
   img.decoding='async';
-  img.src='https://d2ol7oe51mr4n9.cloudfront.net/user_30FdyoCZMftArH1PAmgFtuggdoL/a474125d-e80a-4a22-ae1f-84c921beccce.webp';
-  const COLS=10, ROWS=9, FRAME_W=540, FRAME_H=304, FRAMES=90, FPS=15;
+  img.src='https://d2ol7oe51mr4n9.cloudfront.net/user_30FdyoCZMftArH1PAmgFtuggdoL/291cd3cf-3ff8-4577-a3c2-ea0d6e8b6f3e.webp';
+  const COLS=10, ROWS=9, FRAME_W=420, FRAME_H=836, FRAMES=90, FPS=15;
   let ctx=null,start=0,last=-1,raf=0;
   const fit=()=>{
     const r=c.getBoundingClientRect();
-    const dpr=Math.min(window.devicePixelRatio||1,1.5);
+    const dpr=Math.min(window.devicePixelRatio||1,1.15);
     c.width=Math.max(1,Math.round(r.width*dpr));
     c.height=Math.max(1,Math.round(r.height*dpr));
     ctx=c.getContext('2d',{alpha:false});
