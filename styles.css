@@ -89,3 +89,17 @@
   }
   #heroVideo{pointer-events:none}
 }
+
+/* Keep the exact same hero video on desktop and phone; only change mobile framing */
+@media(max-width:820px){
+  #heroVideo{
+    display:block !important;
+    visibility:visible !important;
+    opacity:1 !important;
+    width:100% !important;
+    height:100% !important;
+    object-fit:cover !important;
+    object-position:center center !important;
+    transform:scale(1.02) !important;
+  }
+}
