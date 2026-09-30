@@ -105,25 +105,17 @@
 }
 
 
-/* Mobile hero: animated exact-footage fallback stays visible until real video is confirmed playing */
-.hero-motion-mobile,.hero-video-mobile{display:none}
+
+/* Mobile hero uses animated AVIF: full-speed 24fps, high quality, no autoplay policy */
+.hero-motion-mobile{display:none}
 @media(max-width:820px){
   .hero-video-desktop{display:none !important}
   .hero-motion-mobile{
     display:block !important;
-    z-index:0;
-    width:100% !important;height:100% !important;
-    object-fit:cover !important;object-position:center center !important;
+    width:100% !important;
+    height:100% !important;
+    object-fit:cover !important;
+    object-position:center center !important;
     transform:scale(1.02) !important;
   }
-  .hero-video-mobile{
-    display:block !important;
-    z-index:1;
-    width:100% !important;height:100% !important;
-    object-fit:cover !important;object-position:center center !important;
-    transform:scale(1.02) !important;
-    opacity:0;
-    pointer-events:none;
-  }
-  .mobile-video-playing .hero-video-mobile{opacity:1}
 }
